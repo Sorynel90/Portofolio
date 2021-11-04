@@ -12,25 +12,43 @@
     <!--JavaScript-->
     <script type="text/javascript" defer src="js/javascript.js"></script>
 
+    <!-- W3 CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Libreria iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
 </head>
 <body>
 
-    <div class="header">
-        <h2>Sorin Petrut Niculae</h2>
-        <p>IT Analyst</p>
+    <div class="header w3-row">
+        <div class="w3-col l3 m6 s4 w3-center">
+            <img src="img/photo.jpg" class="w3-circle" alt="mi foto" id="foto">
+        </div>
+        <div class="w3-col l7 m3 s4 w3-center">
+            <p>Datos</p>
+        </div>
+        <div class="w3-col l2 m3 s4 w3-center">
+            <p>LinkedIn</p>
+        </div>
     </div>
 
-    <div id="navbar">
-        <a class="active" href="#home">Home</a>
-        <a href="#work">Work Experience</a>
-        <a href="#edu_train">Education and Training</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#"><i class="fa fa-fw fa-home"></i>Home</a>
+          <a href="#"><i class="fa fa-fw fa-wrench"></i>Work Experience</a>
+          <a href="#"><i class="fa fa-fw fa-user"></i>Education and Training</a>
+          <a href="#"><i class="fa fa-cogs"></i> Skills</a>
+          <a href="#"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+        </div>
     </div> 
+
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
     
     <div class="content">
-        <h3>Sticky Navigation Example</h3>
-        <p>The navbar will stick to the top when you reach its scroll position.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
         <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
