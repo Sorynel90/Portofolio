@@ -1,8 +1,18 @@
+ /*Color palette*/
+    #color1 {color: #ffcd62}
+    #color2 {color: #cc8c3b}
+    #color3 {color: #905a26}
+    #color4 {color: #603213}
+    #color5 {color: #371604}
+
+
  /* Style the body */
  body {
      margin: 0;
      font-size: 18;
      font-family: Arial, Helvetica, sans-serif;
+     color: #ffcd62;
+     background-color: #371604;
  }
 
  /* Style the header */
@@ -22,7 +32,6 @@
   #navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
