@@ -1,63 +1,74 @@
- /*Color palette*/
-    #color1 {color: #ffcd62}
-    #color2 {color: #cc8c3b}
-    #color3 {color: #905a26}
-    #color4 {color: #603213}
-    #color5 {color: #371604}
+/*Color palette*/
+#color1 {color: #ffcd62}
+#color2 {color: #cc8c3b}
+#color3 {color: #905a26}
+#color4 {color: #603213}
+#color5 {color: #371604}
 
 
- /* Style the body */
- body {
-     margin: 0;
-     font-size: 18;
-     font-family: Arial, Helvetica, sans-serif;
-     color: #ffcd62;
-     background-color: #371604;
- }
+/* Style the body */
+body {
+  margin: 0;
+  font-size: 18;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffcd62;
+  background-color: #603213;
+}
 
- /* Style the header */
- .header {
-     background-color: silver;
-     padding: 30px;
-     text-align: center;
- }
+/* Style the header */
+.header {
+  background-color: #905a26;
+  padding: 30px;
+  text-align: center;
+}
 
- /* Style the navbar */
- #navbar {
-    overflow: hidden;
-    background-color: sienna;
-  }
-  
-  /* Navbar links */
-  #navbar a {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
 
-  #navbar a.active {
-      background-color: yellowgreen;
-  }
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
 
-  #navbar a:hover {
-      background-color: violet;
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
   }
-  
-  /* Page content */
-  .content {
-    padding: 16px;
-  }
-  
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  } 
+}
